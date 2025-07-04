@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Day 3 - API Table with Date Range</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Post List with Random Dates</h2>
+
+    <div class="input-group">
+      <label>From: <input type="date" id="startDate"></label>
+      <label>To: <input type="date" id="endDate"></label>
+      <button onclick="filterByDate()">Filter</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody">
+        <!-- Dynamic Rows -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
